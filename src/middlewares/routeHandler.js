@@ -9,7 +9,7 @@ export function routeHandler(request, response) {
 
   if (route) {
     //se a rota existe, executa o controller
-    return route.controller(request, response);
+    return route.controller({ request, response });
   } else {
     //se não existe, retorna 404
     return response.writeHead(404).end();

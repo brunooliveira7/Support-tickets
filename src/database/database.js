@@ -37,4 +37,11 @@ export class Database {
     //salvar no arquivo db.json
     this.#persist();
   }
+
+  //método para selecionar dados do banco de dados
+  select(table) {
+    //selecionar todos os dados da tabela
+    let data = this.#database[table] ?? [];
+    return data;
+  }
 }

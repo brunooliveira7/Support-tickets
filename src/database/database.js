@@ -19,8 +19,22 @@ export class Database {
       });
   }
 
-  //criar um método que cria o arquivo db.json
+  //método que cria o arquivo db.json
   #persist() {
     fs.writeFile(DATABASE_PATH, JSON.stringify(this.#database));
+  }
+
+  //método para inserir dados no banco de dados
+  insert(table, data) {
+    ///verificar se a tabela existe
+    if (Array.isArray(this.#database[table])) {
+      //se existir, adicionar os dados
+      this.#database[table].push(data);
+    } else {
+      this.#database[table] = [data];
+    }
+
+    //salvar no arquivo db.json
+    this.#persist();
   }
 }

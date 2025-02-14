@@ -1,1 +1,13 @@
-{}
+{
+  "tickets": [
+    {
+      "id": "7fa2576a-9b13-4861-ac7c-9b98ea07764c",
+      "equipment": "Computer",
+      "description": "Computer won't turn on.",
+      "user_name": "Bruno Oliveira",
+      "status": "open",
+      "created_at": "2025-02-14T23:00:48.257Z",
+      "updated_at": "2025-02-14T23:00:48.257Z"
+    }
+  ]
+}

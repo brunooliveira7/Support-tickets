@@ -5,7 +5,7 @@
       "equipment": "Computer",
       "description": "Computer won't turn on.",
       "user_name": "Bruno Oliveira",
-      "status": "open",
+      "status": "closed",
       "created_at": "2025-02-14T23:00:48.257Z",
       "updated_at": "2025-02-14T23:00:48.257Z"
     },

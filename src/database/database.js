@@ -38,10 +38,22 @@ export class Database {
     this.#persist();
   }
 
-  //método para selecionar/listar dados do banco de dados
-  select(table) {
+  //método para selecionar/listar dados do banco de dados e filtrar
+  select(table, filters) {
     //selecionar todos os dados da tabela
     let data = this.#database[table] ?? [];
+
+    //se existir filtro, filtrar os dados
+    if (filters) {
+      data = data.filter((row) => {
+        //verificar se a linha atual tem todos os filtros
+        return Object.entries(filters).some(([key, value]) => {
+          //se a linha atual tem o filtro, retorna true
+          return row[key].toLowerCase().includes(value.toLowerCase());
+        });
+      });
+    }
+
     return data;
   }
 }

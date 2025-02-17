@@ -2,10 +2,11 @@
 export function index({ request, response, database }) {
   //recuperar o query params
   const { status } = request.query;
-  console.log(status);
+
+  const filters = status ? { status } : null;
 
   //selecionar todos os tickets
-  const tickets = database.select("tickets");
+  const tickets = database.select("tickets", filters);
 
   return response.writeHead(200).end(JSON.stringify(tickets));
 }

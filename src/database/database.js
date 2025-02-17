@@ -38,7 +38,7 @@ export class Database {
     this.#persist();
   }
 
-  //método para selecionar dados do banco de dados
+  //método para selecionar/listar dados do banco de dados
   select(table) {
     //selecionar todos os dados da tabela
     let data = this.#database[table] ?? [];

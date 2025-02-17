@@ -8,7 +8,7 @@ export function routeHandler(request, response) {
   //procura a rota
   const route = routes.find((route) => {
     //se a rota tem método, path e requisição iguais retorna rota
-    return route.method === request.method && route.path === request.url;
+    return route.method === request.method && route.path.test(request.url);
   });
 
   if (route) {

@@ -1,5 +1,6 @@
 import { routes } from "../routes/index.js";
 import { Database } from "../database/database.js";
+import { extractQueryParams } from "../utils/extractQueryParams.js";
 
 //criar uma instância do banco de dados
 const database = new Database();
@@ -12,6 +13,12 @@ export function routeHandler(request, response) {
   });
 
   if (route) {
+    const routeParams = request.url.match(route.path);
+
+    const { query } = routeParams.groups;
+    //se a rota existe, adiciona os parâmetros da query
+    request.query = query ? extractQueryParams(query) : {};
+
     //se a rota existe, executa o controller
     return route.controller({ request, response, database });
   } else {

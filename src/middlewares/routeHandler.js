@@ -15,9 +15,11 @@ export function routeHandler(request, response) {
   if (route) {
     const routeParams = request.url.match(route.path);
 
-    const { query } = routeParams.groups;
+    const { query, ...params } = routeParams.groups;
     //se a rota existe, adiciona os parâmetros da query
     request.query = query ? extractQueryParams(query) : {};
+
+    request.params = params;
 
     //se a rota existe, executa o controller
     return route.controller({ request, response, database });

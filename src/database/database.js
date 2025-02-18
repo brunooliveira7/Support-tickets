@@ -56,4 +56,19 @@ export class Database {
 
     return data;
   }
+
+  ///método para atualizar dados do banco de dados
+  update(table, id, data) {
+    const rowIndex = this.#database[table].findIndex((row) => row.id === id);
+
+    //se existe, atualiza o registro
+    if (rowIndex > -1) {
+      this.#database[table][rowIndex] = {
+        ...this.#database[table][rowIndex],
+        ...data,
+      };
+      
+      this.#persist();
+    }
+  }
 }

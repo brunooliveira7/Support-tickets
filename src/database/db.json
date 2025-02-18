@@ -11,12 +11,12 @@
     },
     {
       "id": "71791d40-06c3-4e4a-a7ba-8c8410ce2cbe",
-      "equipment": "Teclado",
+      "equipment": "Mouse",
       "description": "The space key does not work",
       "user_name": "Isaac Oliveira",
       "status": "open",
       "created_at": "2025-02-14T23:24:41.605Z",
-      "updated_at": "2025-02-14T23:24:41.605Z"
+      "updated_at": "2025-02-18T23:43:41.731Z"
     }
   ]
 }

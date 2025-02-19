@@ -1,1 +1,23 @@
-{"tickets":[{"id":"7fa2576a-9b13-4861-ac7c-9b98ea07764c","equipment":"Computer","description":"Computer won't turn on.","user_name":"Bruno Oliveira","status":"closed","created_at":"2025-02-14T23:00:48.257Z","updated_at":"2025-02-14T23:00:48.257Z","solution":"Equipment exchanged."},{"id":"71791d40-06c3-4e4a-a7ba-8c8410ce2cbe","equipment":"Mouse","description":"The space key does not work","user_name":"Isaac Oliveira","status":"closed","created_at":"2025-02-14T23:24:41.605Z","updated_at":"2025-02-18T23:43:41.731Z"},{"id":"c434b235-a598-41cc-8115-eb0b100c094d","equipment":"Monitor","description":"Monitor suddenly turns off","user_name":"Andréia Oliveira","status":"closed","created_at":"2025-02-18T23:55:26.249Z","updated_at":"2025-02-18T23:55:26.249Z"},{"id":"3e1c0a4f-6503-4118-8ea6-861dd0641cc3","equipment":"Computer","description":"Computer keeps restarting","user_name":"Tarcilene Oliveira","status":"closed","created_at":"2025-02-19T23:12:06.072Z","updated_at":"2025-02-19T23:12:06.072Z","solution":"The computer memory has been replaced."}]}
+{
+  "tickets": [
+    {
+      "id": "7fa2576a-9b13-4861-ac7c-9b98ea07764c",
+      "equipment": "Computer",
+      "description": "Computer won't turn on.",
+      "user_name": "Bruno Oliveira",
+      "status": "closed",
+      "created_at": "2025-02-14T23:00:48.257Z",
+      "updated_at": "2025-02-14T23:00:48.257Z",
+      "solution": "Equipment exchanged."
+    },
+    {
+      "id": "c434b235-a598-41cc-8115-eb0b100c094d",
+      "equipment": "Monitor",
+      "description": "Monitor suddenly turns off",
+      "user_name": "Andréia Oliveira",
+      "status": "closed",
+      "created_at": "2025-02-18T23:55:26.249Z",
+      "updated_at": "2025-02-18T23:55:26.249Z"
+    }
+  ]
+}

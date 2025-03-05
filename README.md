@@ -71,5 +71,5 @@ APINodejs para gerenciar ticket de suporte técnico, permitindo criar um ticket 
 
 
 <p align="center">
-  <img alt="License" src="">
+  <img alt="License" src="https://github.com/brunooliveira7/Support-tickets/blob/main/assets/API%20de%20tickets.png">
 </p>
